@@ -33,5 +33,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   year_data_transform:
     # Config indicated by + and applies to all files under models/example/
-    year_transformations:
+    01_year_transformations:
       +materialized: table
+    02_season_table:
+      +materialized: table
+    03_network_table:
+      +materialized: table
+    04_component_table:
+      +materialized: table
+    05_large_report_data:
+      +materialized: table
+    

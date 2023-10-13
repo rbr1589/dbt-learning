@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: networks
+    description: "A unique list of networks"
+    columns:
+      - name: network_type_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: "network_type"
+        description: "Type of networks, eg: Winter, Summer"

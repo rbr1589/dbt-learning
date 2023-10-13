@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: components
+    description: "A unique list of components"
+    columns:
+      - name: component_type_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: "component_type"
+        description: "Type of networks, eg: Winter, Summer"
