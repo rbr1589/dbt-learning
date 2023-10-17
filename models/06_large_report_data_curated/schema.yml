@@ -4,33 +4,26 @@ models:
   - name: large_report_transformed_data
     description: "Transformed data"
     columns:
-      - name: "id"
+      - name: "season_id"
         description: "Primary key for the table"
-        data_type: varchar
         tests:
           - unique
           - not_null
       - name: "season_type_id"
         description: "Season id to identofy the season"
-        data_type: varchar
         relationship:
           - to: season.season_type_id
       - name: "network_id"
         desctipion: "Network id to identify the network"
-        data_type: varchar
         relationship:
           - to: network.network_type_id
       - name: "year"
         description: "Year for which the data was collected"
-        data_type: integer
-      - name: "component_type_id"
+      - name: "component_id"
         description: "Id of the component"
-        data_type: varchar
         relationship:
           - to: component.component_type_id
       - name: "hour"
         description: "Hour of the day for which the data was collected"
-        data_type: varchar
       - name: "value"
-        data_type: double precision
         description: "Data value"

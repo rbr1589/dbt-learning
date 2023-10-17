@@ -6,8 +6,10 @@ models:
     columns:
       - name: component_type_id
         description: "The primary key for this table"
+        data_type: varchar
         tests:
           - unique
           - not_null
       - name: "component_type"
+        data_type: varchar
         description: "Type of networks, eg: Winter, Summer"

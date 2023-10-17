@@ -43,4 +43,6 @@ models:
       +materialized: table
     05_large_report_data:
       +materialized: table
+    06_large_report_data_curated:
+      +materialized: table
     
