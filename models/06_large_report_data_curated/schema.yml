@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: large_report_transformed_data
+  - name: curated_large_report_data
     description: "Transformed data"
     columns:
       - name: "season_id"
